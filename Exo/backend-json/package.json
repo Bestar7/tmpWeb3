@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "npm run notes",
+    "notes": "npx json-server --no-cors --watch notes.json",
+    "phonebook": "npx json-server --no-cors --watch phonebook.json"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "json-server": "^0.17.4"
+  }
+}

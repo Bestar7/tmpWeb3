@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "start": "node index.js",
+    "noExpress": "npx json-server --no-cors --watch db.json"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv-flow": "^3.2.0",
+    "ejson": "^2.2.3",
+    "express": "^4.18.2",
+    "mongodb": "^5.5.0",
+    "mongodb-memory-server": "^8.12.2",
+    "mongoose": "^6.8.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

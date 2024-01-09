@@ -1,0 +1,37 @@
+@port = 3000
+@baseUrl = http://localhost
+@ressources = phonebook
+@url = {{baseUrl}}:{{port}}/{{ressources}}
+
+### CREATE
+POST {{url}}
+Content-Type: application/json
+
+{
+    "name":"REST Client",
+    "phone":"012"
+}
+
+### READ phonebook
+GET {{url}}
+
+### READ one phonebook existing entry
+GET {{url}}/659bf4c751a0f848ec3c66d9
+
+### READ one phonebook non existant entry
+GET {{url}}/659b5968a780c84622222222
+
+### READ one phonebook wrong format
+GET {{url}}/1
+
+### UPDATE one
+PUT {{url}}/659bf4c751a0f848ec3c66d9
+Content-Type: application/json
+
+{
+    "name":"REST Client modify",
+    "phone":"012"
+}
+
+### DELETE one
+DELETE {{url}}/659b6a6c3753a1c581709cee

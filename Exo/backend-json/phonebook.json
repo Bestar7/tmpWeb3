@@ -1,0 +1,24 @@
+{
+  "phonebook": [
+    {
+      "id": 1,
+      "phone": "0483/66.44.31",
+      "name": "Tom Hollande"
+    },
+    {
+      "id": 2,
+      "phone": "0483/66.44.32",
+      "name": "Tobi"
+    },
+    {
+      "id": 3,
+      "phone": "0483/66.44.33",
+      "name": "Bertobi"
+    },
+    {
+      "id": 4,
+      "phone": "04",
+      "name": "Le J c'est le S"
+    }
+  ]
+}

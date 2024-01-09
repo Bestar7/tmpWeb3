@@ -1,0 +1,43 @@
+@port = 3000
+@baseUrl = http://localhost
+@ressources = notes
+@url = {{baseUrl}}:{{port}}/{{ressources}}
+
+### CREATE
+POST {{url}}
+Content-Type: application/json
+
+{
+    "content":"REST Client",
+    "important":"false"
+}
+
+### READ ALL
+GET {{url}}
+
+### READ one existing note
+GET {{url}}/659b6bcd8632804ac9aac4e9
+
+### READ one non existant note
+GET {{url}}/659b5968a780c84622222222
+
+### READ one wrong format note
+GET {{url}}/1
+
+### UPDATE one
+PUT {{url}}/659bf289749cd5de226f5142
+Content-Type: application/json
+
+{
+    "content":"REST Client modify",
+    "important":"false"
+}
+
+### DELETE one
+DELETE {{url}}/659b69cea8957e5745304aee
+
+### DELETE one wrong id
+DELETE {{url}}/659b630042d9212dc5555555
+
+### DELETE one wrong id type
+DELETE {{url}}/1
